@@ -13,6 +13,8 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.aristidevs.navigationguide.core.navigation.NavigationWrapper
 import com.aristidevs.navigationguide.ui.theme.NavigationGuideTheme
+import android.content.Intent
+import android.net.Uri
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -20,7 +22,7 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             NavigationGuideTheme {
-               NavigationWrapper()
+                NavigationWrapper()
             }
         }
     }
